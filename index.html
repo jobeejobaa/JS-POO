@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gladiator Arena</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="arena">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Arena Mode</p>
+          <h1>Gladiator</h1>
+          <p class="subtitle">Une partie tactique tour par tour, claire et lisible.</p>
+        </div>
+        <div class="controls">
+          <button id="new-game" class="primary">Nouvelle partie</button>
+          <div class="turn-pill" id="turn-pill">Tour 1 · 10 restants</div>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Action</h2>
+          <p id="current-player">En attente…</p>
+        </div>
+        <div class="panel-body">
+          <label>
+            Cible
+            <select id="target-select"></select>
+          </label>
+          <div class="action-buttons">
+            <button id="attack-normal">Attaque normale</button>
+            <button id="attack-special">Attaque spéciale</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="players">
+          <div class="section-title">
+            <h2>Gladiateurs</h2>
+            <p>État de chaque combattant.</p>
+          </div>
+          <div id="players-grid" class="cards"></div>
+        </div>
+        <aside class="log">
+          <div class="section-title">
+            <h2>Journal</h2>
+            <p>Chaque action du tour.</p>
+          </div>
+          <div id="log-entries" class="log-entries"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="./ui.js"></script>
+  </body>
+</html>

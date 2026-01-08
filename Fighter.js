@@ -1,0 +1,17 @@
+const Character = require("./Character.js");
+const { DEFAULT_STATS } = require("./stats.js");
+
+class Fighter extends Character {
+  constructor(name) {
+    super(name, DEFAULT_STATS.Fighter.hp, DEFAULT_STATS.Fighter.dmg, DEFAULT_STATS.Fighter.mana);
+  }
+
+  specialAttack(target) {
+    const cost = 20;
+    if (!this.spendMana(cost)) return false;
+    target.takeDamage(5);
+    return true;
+  }
+}
+
+module.exports = Fighter;

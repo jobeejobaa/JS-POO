@@ -1,0 +1,45 @@
+class Character {
+  constructor(name, hp, dmg, mana) {
+    this.name = name;
+    this.hp = hp;
+    this.dmg = dmg;
+    this.mana = mana;
+    this.status = "playing";
+  }
+
+  isLoser() {
+    return this.status === "loser";
+  }
+
+  takeDamage(amount) {
+    if (this.isLoser()) return;
+    this.hp -= amount;
+    if (this.hp <= 0) {
+      this.hp = 0;
+      this.status = "loser";
+    }
+  }
+
+  dealDamage(target) {
+    if (this.isLoser()) return false;
+    target.takeDamage(this.dmg);
+    return true;
+  }
+
+  spendMana(cost) {
+    if (this.mana < cost) return false;
+    this.mana -= cost;
+    return true;
+  }
+
+  heal(amount) {
+    if (this.isLoser()) return;
+    this.hp += amount;
+  }
+
+  info() {
+    return `${this.name} (${this.constructor.name}) hp:${this.hp} dmg:${this.dmg} mana:${this.mana} status:${this.status}`;
+  }
+}
+
+module.exports = Character;

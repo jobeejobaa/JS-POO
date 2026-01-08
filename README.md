@@ -25,9 +25,8 @@ L'interface est definie dans:
 
 Ouvre `index.html` dans ton navigateur.
 
-Note: le navigateur ne comprend pas `require`. Si tu veux reutiliser les classes
-Fighter/Monk/etc dans l'UI, il faut une version ESM (import/export) ou tout mettre
-dans un seul fichier pour le navigateur.
+Note: le navigateur ne comprend pas `require`. Pour l'UI, une version ESM des
+classes se trouve dans `esm/` et `ui.js` les importe.
 
 ## Structure rapide
 - `Game.js`: logique principale du tour par tour.

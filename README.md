@@ -20,21 +20,21 @@ Ce mode utilise CommonJS (require/module.exports) pour fonctionner sans package.
 ## Mode navigateur (UI)
 L'interface est definie dans:
 - `index.html`
-- `styles.css`
-- `ui.js`
+- `js/ui/styles.css`
+- `js/ui/ui.js`
 
 Ouvre `index.html` dans ton navigateur.
 
 Note: le navigateur ne comprend pas `require`. Pour l'UI, une version ESM des
-classes se trouve dans `esm/` et `ui.js` les importe.
+classes se trouve dans `esm/` et `js/ui/ui.js` les importe.
 
 ## Structure rapide
 - `Game.js`: logique principale du tour par tour.
 - `Character.js`: classe de base (pv, degats, mana, statut).
 - `Fighter.js`, `Paladin.js`, `Monk.js`, `Berzerker.js`, `Assassin.js`, `Jobee.js`, `Wizard.js`: classes de personnages.
-- `stats.js`: valeurs de base (hp, dmg, mana).
+- `Character.js`: classe de base + valeurs par defaut (hp, dmg, mana).
 - `index.js`: point d'entree console.
-- `ui.js`: logique de l'interface web.
+- `js/ui/ui.js`: logique de l'interface web.
 
 ## Notes
 - Console: CommonJS (require/module.exports), pas besoin de package.json.

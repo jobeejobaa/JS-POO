@@ -146,10 +146,20 @@ select {
   align-items: flex-start;
 }
 
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.action-title {
+  font-weight: 600;
+}
+
 .action-info {
   font-size: 0.85rem;
   color: var(--muted);
-  padding-left: 4px;
 }
 
 .grid {

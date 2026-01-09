@@ -1,9 +1,13 @@
 const Character = require("./Character.js");
-const { DEFAULT_STATS } = require("./stats.js");
 
 class Jobee extends Character {
   constructor(name) {
-    super(name, DEFAULT_STATS.Jobee.hp, DEFAULT_STATS.Jobee.dmg, DEFAULT_STATS.Jobee.mana);
+    super(
+      name,
+      Character.DEFAULT_STATS.Jobee.hp,
+      Character.DEFAULT_STATS.Jobee.dmg,
+      Character.DEFAULT_STATS.Jobee.mana
+    );
   }
 
   takeDamage(amount) {

@@ -1,9 +1,13 @@
 import Character from "./Character.js";
-import { DEFAULT_STATS } from "./stats.js";
 
 export default class Berzerker extends Character {
   constructor(name) {
-    super(name, DEFAULT_STATS.Berzerker.hp, DEFAULT_STATS.Berzerker.dmg, DEFAULT_STATS.Berzerker.mana);
+    super(
+      name,
+      Character.DEFAULT_STATS.Berzerker.hp,
+      Character.DEFAULT_STATS.Berzerker.dmg,
+      Character.DEFAULT_STATS.Berzerker.mana
+    );
   }
 
   specialAttack() {

@@ -1,9 +1,13 @@
 const Character = require("./Character.js");
-const { DEFAULT_STATS } = require("./stats.js");
 
 class Assassin extends Character {
   constructor(name) {
-    super(name, DEFAULT_STATS.Assassin.hp, DEFAULT_STATS.Assassin.dmg, DEFAULT_STATS.Assassin.mana);
+    super(
+      name,
+      Character.DEFAULT_STATS.Assassin.hp,
+      Character.DEFAULT_STATS.Assassin.dmg,
+      Character.DEFAULT_STATS.Assassin.mana
+    );
   }
 
   specialAttack(target) {

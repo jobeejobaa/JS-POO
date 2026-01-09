@@ -1,9 +1,13 @@
 import Character from "./Character.js";
-import { DEFAULT_STATS } from "./stats.js";
 
 export default class Monk extends Character {
   constructor(name) {
-    super(name, DEFAULT_STATS.Monk.hp, DEFAULT_STATS.Monk.dmg, DEFAULT_STATS.Monk.mana);
+    super(
+      name,
+      Character.DEFAULT_STATS.Monk.hp,
+      Character.DEFAULT_STATS.Monk.dmg,
+      Character.DEFAULT_STATS.Monk.mana
+    );
   }
 
   specialAttack() {

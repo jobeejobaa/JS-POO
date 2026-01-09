@@ -26,12 +26,23 @@
         </div>
         <div class="panel-body">
           <label>
+            Joueur principal
+            <select id="player-select"></select>
+          </label>
+          <button id="confirm-player" class="ghost">Valider le joueur</button>
+          <label>
             Cible
             <select id="target-select"></select>
           </label>
           <div class="action-buttons">
-            <button id="attack-normal">Attaque normale</button>
-            <button id="attack-special">Attaque spéciale</button>
+            <div class="action">
+              <button id="attack-normal">Attaque normale</button>
+              <div id="attack-normal-info" class="action-info">Dégâts: —</div>
+            </div>
+            <div class="action">
+              <button id="attack-special">Attaque spéciale</button>
+              <div id="attack-special-info" class="action-info">Dégâts: —</div>
+            </div>
           </div>
         </div>
       </section>

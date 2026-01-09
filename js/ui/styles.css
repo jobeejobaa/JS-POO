@@ -139,6 +139,19 @@ select {
   flex-wrap: wrap;
 }
 
+.action {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.action-info {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding-left: 4px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;

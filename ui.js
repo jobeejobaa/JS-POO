@@ -1,10 +1,10 @@
-import Fighter from "./Fighter.js";
-import Paladin from "./Paladin.js";
-import Monk from "./Monk.js";
-import Berzerker from "./Berzerker.js";
-import Assassin from "./Assassin.js";
-import Jobee from "./Jobee.js";
-import Wizard from "./Wizard.js";
+import Fighter from "./esm/Fighter.js";
+import Paladin from "./esm/Paladin.js";
+import Monk from "./esm/Monk.js";
+import Berzerker from "./esm/Berzerker.js";
+import Assassin from "./esm/Assassin.js";
+import Jobee from "./esm/Jobee.js";
+import Wizard from "./esm/Wizard.js";
 
 const classTypes = [Fighter, Paladin, Monk, Berzerker, Assassin, Jobee, Wizard];
 const namePool = ["Aragorn", "Uther", "Tenzin", "Ragnar", "Shade"];
